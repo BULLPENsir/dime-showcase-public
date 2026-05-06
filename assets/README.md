@@ -1,12 +1,9 @@
 # Public Assets
 
-Put public-facing demo assets here.
+Current public asset:
 
-Recommended files:
+- `dime-application-homepage.png`
 
-- `dime-ui-overview.png`
-- `dime-ai-log.png`
-- `dime-memory-preview.png`
-- `demo-video-link.txt`
+This screenshot is the current public demo surface for DIME and represents the desktop application's main home page.
 
 Only place sanitized screenshots and public material in this folder.

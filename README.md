@@ -82,6 +82,19 @@ The desktop workbench is designed around four operator-facing areas:
 - AI operation log
 - Memory preview
 
+## Public Demo
+
+The current public demo for DIME is the desktop application's main home page.
+
+It shows the operator-facing workbench in its default attached-ready state, including:
+
+- process list on the left
+- backend and attachment status at the top
+- AI operation log in the center
+- memory preview controls at the bottom
+
+![DIME Application Home Page](assets/dime-application-homepage.png)
+
 ## Demo Material
 
 This repo is intended to host public-facing product material such as:
@@ -92,12 +105,9 @@ This repo is intended to host public-facing product material such as:
 - onboarding notes
 - public release notes
 
-### Planned Public Assets
+### Current Public Asset
 
-- `assets/dime-ui-overview.png`
-- `assets/dime-ai-log.png`
-- `assets/dime-memory-preview.png`
-- `assets/demo-video-link.txt`
+- `assets/dime-application-homepage.png`
 
 ## Public / Private Split
 
@@ -131,11 +141,11 @@ Typical integration targets include:
 
 DIME is under active development as a serious product and workflow engine, not just a one-off demo.
 
-The public repo will continue to evolve into a cleaner product-facing surface while the private repo remains the main engineering workspace.
+The current public-facing material is intentionally minimal: one clean application home page screenshot plus a high-level product description. The private repo remains the main engineering workspace.
 
 ## Roadmap
 
-- Publish screenshots and a short walkthrough video
+- Publish additional screenshots and a short walkthrough video
 - Add a polished public architecture diagram
 - Publish integration examples for AI clients
 - Share sanitized release notes and milestone updates
