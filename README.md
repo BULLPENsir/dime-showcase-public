@@ -1,0 +1,146 @@
+# DIME
+
+**DMA Integrated Memory Engine** is a Windows-first memory analysis and reverse engineering workbench built for AI-assisted workflows.
+
+This public repository is a **product showcase repo** for DIME.  
+The core implementation, active development branch, target-specific data, and private research workflows remain in a separate private repository.
+
+## What DIME Is
+
+DIME is designed to connect modern AI agents with local memory tooling in a structured, repeatable way.
+
+Instead of treating reverse engineering as a loose collection of manual steps, DIME turns the workflow into:
+
+- structured tool calls
+- live process inspection
+- memory scanning and analysis
+- repeatable profile-driven operations
+- AI-readable results through MCP
+
+## Why It Exists
+
+Traditional reverse engineering and memory analysis tools are powerful, but they were not designed for AI-native interaction.
+
+DIME closes that gap by combining:
+
+- a local Windows memory engine
+- MCP integration for AI tools
+- a GUI workbench for operators
+- a backend abstraction for both OS and DMA-style access
+- reusable target profiles and analysis workflows
+
+## Core Product Idea
+
+```mermaid
+flowchart TD
+    A["AI agent<br/>Claude Desktop / Claude Code / Cursor / Codex"] --> B["MCP bridge"]
+    B --> C["Local IPC layer"]
+    C --> D["DIME desktop workbench"]
+    D --> E["Memory backend abstraction"]
+    E --> F["OS memory access"]
+    E --> G["DMA-style access"]
+```
+
+DIME is built around a single goal:
+
+**make memory analysis accessible to AI agents without giving up operator visibility or backend flexibility.**
+
+## Product Capabilities
+
+- Process enumeration and attachment
+- Module and thread inspection
+- Memory read and write operations
+- First-scan and next-scan workflows
+- AOB pattern scanning
+- Pointer chain resolution
+- Disassembly and structure inspection
+- Profile-based target workflows
+- AI tool integration through MCP
+- Operator-visible logging and live state in the desktop UI
+
+## Intended Workflow
+
+1. Start the DIME desktop application locally.
+2. Connect an AI client through MCP.
+3. Ask the agent to inspect a process, scan memory, or validate offsets.
+4. Watch tool calls and results appear in the operator UI.
+5. Save results into reusable profiles for future sessions.
+
+This workflow is especially useful for:
+
+- AI-assisted reverse engineering
+- offset maintenance on frequently updated targets
+- memory debugging and structure inspection
+- research setups that benefit from long-context tool use
+
+## Product Surface
+
+The desktop workbench is designed around four operator-facing areas:
+
+- Process selection
+- Backend and attachment status
+- AI operation log
+- Memory preview
+
+## Demo Material
+
+This repo is intended to host public-facing product material such as:
+
+- screenshots of the desktop UI
+- short product demo videos
+- architecture diagrams
+- onboarding notes
+- public release notes
+
+### Planned Public Assets
+
+- `assets/dime-ui-overview.png`
+- `assets/dime-ai-log.png`
+- `assets/dime-memory-preview.png`
+- `assets/demo-video-link.txt`
+
+## Public / Private Split
+
+### Public in this repo
+
+- product overview
+- architecture at a high level
+- capability summary
+- screenshots and demo assets
+- integration examples
+
+### Kept private
+
+- active source repository
+- implementation details under active iteration
+- target-specific private profiles
+- research data, offset pipelines, and private validation material
+
+## Integration Direction
+
+DIME is designed to work alongside AI coding tools and local agent clients that support MCP-style tool calling.
+
+Typical integration targets include:
+
+- Claude Desktop
+- Claude Code
+- Cursor
+- Codex
+
+## Current Status
+
+DIME is under active development as a serious product and workflow engine, not just a one-off demo.
+
+The public repo will continue to evolve into a cleaner product-facing surface while the private repo remains the main engineering workspace.
+
+## Roadmap
+
+- Publish screenshots and a short walkthrough video
+- Add a polished public architecture diagram
+- Publish integration examples for AI clients
+- Share sanitized release notes and milestone updates
+- Prepare a stable public demo package
+
+## License
+
+MIT. See [LICENSE](LICENSE).
