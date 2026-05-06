@@ -3,7 +3,7 @@
 **DMA Integrated Memory Engine** is a Windows-first memory analysis and reverse engineering workbench built for AI-assisted workflows.
 
 This public repository is a **product showcase repo** for DIME.  
-The core implementation, active development branch, target-specific data, and private research workflows remain in a separate private repository.
+The core implementation, active development branch, and all private operational material remain in a separate private repository.
 
 ## What DIME Is
 
@@ -14,7 +14,7 @@ Instead of treating reverse engineering as a loose collection of manual steps, D
 - structured tool calls
 - live process inspection
 - memory scanning and analysis
-- repeatable profile-driven operations
+- repeatable operator workflows
 - AI-readable results through MCP
 
 ## Why It Exists
@@ -27,7 +27,7 @@ DIME closes that gap by combining:
 - MCP integration for AI tools
 - a GUI workbench for operators
 - a backend abstraction for both OS and DMA-style access
-- reusable target profiles and analysis workflows
+- reusable analysis workflows
 
 ## Core Product Idea
 
@@ -54,7 +54,7 @@ DIME is built around a single goal:
 - AOB pattern scanning
 - Pointer chain resolution
 - Disassembly and structure inspection
-- Profile-based target workflows
+- Structured operator workflows
 - AI tool integration through MCP
 - Operator-visible logging and live state in the desktop UI
 
@@ -62,16 +62,15 @@ DIME is built around a single goal:
 
 1. Start the DIME desktop application locally.
 2. Connect an AI client through MCP.
-3. Ask the agent to inspect a process, scan memory, or validate offsets.
+3. Ask the agent to inspect a process, scan memory, or assist with memory analysis tasks.
 4. Watch tool calls and results appear in the operator UI.
-5. Save results into reusable profiles for future sessions.
+5. Reuse the workflow in future sessions.
 
 This workflow is especially useful for:
 
 - AI-assisted reverse engineering
-- offset maintenance on frequently updated targets
 - memory debugging and structure inspection
-- research setups that benefit from long-context tool use
+- long-context AI-assisted analysis sessions
 
 ## Product Surface
 
@@ -109,6 +108,10 @@ This repo is intended to host public-facing product material such as:
 
 - `assets/dime-application-homepage.png`
 
+### Scope Note
+
+This public repo intentionally does **not** include case studies, target-specific examples, or real operational walkthroughs.
+
 ## Public / Private Split
 
 ### Public in this repo
@@ -123,8 +126,8 @@ This repo is intended to host public-facing product material such as:
 
 - active source repository
 - implementation details under active iteration
-- target-specific private profiles
-- research data, offset pipelines, and private validation material
+- private datasets and internal validation material
+- any target-specific or case-specific information
 
 ## Integration Direction
 
